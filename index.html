@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tea House</title>
     <link rel="shortcut icon" href="./images/tea-1.png" type="image/x-icon">
-    <!-- Manrope Font -->
+    <!-- Manrope font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
@@ -19,15 +19,41 @@
             extend: {
               colors: {
                 clifford: '#da373d',
+              },
+              fontFamily: {
+                'manrope': ['Manrope', 'sans-serif']
               }
             }
           }
         }
       </script>
 </head>
-<body>
+<body class="font-manrope">
     <!-- Header -->
-     <header></header>
+     <header>
+        <!-- Banner -->
+         <section class="w-4/5 md:4/6 mx-auto flex flex-col md:flex-row md:my-20 my-10 items-center md:gap-3 gap-8 justify-center">
+          <!-- Banner Text -->
+           <div>
+            <p class="font-extrabold text-7xl text-[#1C1C1C]">It's good <br> tea time at The <br> Tea House</p>
+            <p class="font-medium text-xl text-[#777777] md:w-2/5 mt-8 mb-12">Tea and Botanical Solutions Supplier Give Optimum Satisfaction To Your Taste Buds.</p>
+            <button class="bg-gradient-to-r from-[#FF8938] to-[#FF0000] p-4 rounded-lg flex items-center gap-2"><p class="text-xl font-bold text-[#FFFFFF]">Explore More</p> 
+            <i class="fa-solid fa-arrow-up fa-rotate-by" style="color: #f0f0f0; --fa-rotate-angle: 45deg;"></i></button>
+           </div>
+          <!-- Banner Image -->
+           <div class="relative">
+            <img class="w-full" src="./images/banner.png" alt="">
+            <!-- Banner Image Card -->
+             <div class="flex items-center gap-3 shadow-md px-5 py-6 rounded-xl absolute bottom-1 left-10 bg-[#FFFFFF]">
+              <i class="fa-solid fa-star text-5xl" style="color: #FFD43B;"></i>
+              <div>
+                <p class="font-extrabold text-3xl text-[#1C1C1C]">5.00</p>
+                <p class="font-medium text-xl text-[#777777]">Trust Pilot Ratings</p>
+              </div>
+             </div>
+           </div>
+         </section>
+     </header>
     <!-- Main -->
      <main></main>
     <!-- Footer -->
